@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Building Success'
                 echo 'Containerizing'
-                bat 'docker build -t priyanj/jenkins-demo'
+                bat 'docker build -t priyanj/jenkins-demo .'
             }
         }
         stage('Publish') {
